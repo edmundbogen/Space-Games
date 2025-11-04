@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025 Mayoral Election - Live Results & Coverage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Breaking News Banner -->
+    <div class="breaking-news-banner">
+        <div class="breaking-text">BREAKING NEWS</div>
+        <div class="breaking-content">
+            <span id="breakingNewsText">2025 Mayoral Election - Live Coverage and Results</span>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="election-year">2025</div>
+                <div class="election-title">MAYORAL ELECTION</div>
+            </div>
+            <div class="live-indicator">
+                <span class="live-dot"></span>
+                <span class="live-text">LIVE COVERAGE</span>
+            </div>
+        </div>
+        <div class="header-timestamp" id="currentTime"></div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="content-grid">
+        <!-- Left Sidebar - News Feed -->
+        <aside class="news-feed">
+            <div class="section-header">
+                <h2>LATEST UPDATES</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="news-items" id="newsFeed">
+                <!-- News items will be dynamically loaded -->
+            </div>
+        </aside>
+
+        <!-- Center - Main Results Display -->
+        <section class="main-display">
+            <!-- Vote Count Header -->
+            <div class="vote-header">
+                <div class="vote-stat">
+                    <div class="stat-label">PRECINCTS REPORTING</div>
+                    <div class="stat-value" id="precinctsReporting">0%</div>
+                </div>
+                <div class="vote-stat">
+                    <div class="stat-label">TOTAL VOTES CAST</div>
+                    <div class="stat-value" id="totalVotes">0</div>
+                </div>
+                <div class="vote-stat">
+                    <div class="stat-label">VOTER TURNOUT</div>
+                    <div class="stat-value" id="voterTurnout">0%</div>
+                </div>
+            </div>
+
+            <!-- Candidates Results -->
+            <div class="candidates-section">
+                <div class="section-header">
+                    <h2>LIVE RESULTS</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="candidates-container" id="candidatesContainer">
+                    <!-- Candidate cards will be dynamically loaded -->
+                </div>
+            </div>
+
+            <!-- Results Chart -->
+            <div class="chart-section">
+                <div class="section-header">
+                    <h2>VOTE DISTRIBUTION</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="resultsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Key Issues Section -->
+            <div class="issues-section">
+                <div class="section-header">
+                    <h2>KEY ISSUES</h2>
+                    <div class="header-line"></div>
+                </div>
+                <div class="issues-grid" id="issuesGrid">
+                    <!-- Issues will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Sidebar - Analysis & Social -->
+        <aside class="analysis-feed">
+            <div class="section-header">
+                <h2>EXPERT ANALYSIS</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="analysis-items" id="analysisContent">
+                <!-- Analysis content will be dynamically loaded -->
+            </div>
+
+            <div class="section-header" style="margin-top: 2rem;">
+                <h2>SOCIAL PULSE</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="social-feed" id="socialFeed">
+                <!-- Social content will be dynamically loaded -->
+            </div>
+        </aside>
+    </main>
+
+    <!-- Bottom Ticker -->
+    <div class="ticker-wrapper">
+        <div class="ticker-label">UPDATES</div>
+        <div class="ticker-content">
+            <div class="ticker-text" id="tickerText"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mayoral Election Coverage | Last Updated: <span id="lastUpdate"></span></p>
+            <p class="disclaimer">Results are unofficial until certified by election officials</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -325,10 +325,10 @@ function startVoteCounting() {
         }
 
         // Increment precincts reporting
-        electionData.precinctsReporting = Math.min(100, electionData.precinctsReporting + Math.random() * 3);
+        electionData.precinctsReporting = Math.min(100, electionData.precinctsReporting + Math.random() * 8);
 
         // Add votes to candidates (weighted random)
-        const totalNewVotes = Math.floor(Math.random() * 5000) + 2000;
+        const totalNewVotes = Math.floor(Math.random() * 8000) + 3000;
 
         // Distribute votes with some randomness but realistic patterns
         electionData.candidates.forEach((candidate, index) => {
@@ -350,7 +350,7 @@ function startVoteCounting() {
         renderCandidates();
         updateChart();
 
-    }, 3000); // Update every 3 seconds
+    }, 800); // Update every 0.8 seconds
 }
 
 // ===== UPDATE STATS =====
@@ -406,7 +406,7 @@ function startLiveUpdates() {
         newsUpdates.pop(); // Remove oldest
         renderNewsFeed();
 
-    }, 30000); // Every 30 seconds
+    }, 10000); // Every 10 seconds
 }
 
 // ===== UTILITY FUNCTIONS =====
@@ -435,7 +435,7 @@ let breakingNewsIndex = 0;
 setInterval(() => {
     breakingNewsIndex = (breakingNewsIndex + 1) % breakingNewsMessages.length;
     document.getElementById('breakingNewsText').textContent = breakingNewsMessages[breakingNewsIndex];
-}, 8000);
+}, 4000);
 
 // ===== RESPONSIVE ADJUSTMENTS =====
 window.addEventListener('resize', () => {

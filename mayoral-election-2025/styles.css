@@ -44,7 +44,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    animation: shimmer 3s infinite;
+    animation: shimmer 2s infinite;
 }
 
 @keyframes shimmer {
@@ -60,7 +60,7 @@ body {
     letter-spacing: 2px;
     margin-right: 1rem;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
-    animation: pulse 2s ease-in-out infinite;
+    animation: pulse 1s ease-in-out infinite;
 }
 
 @keyframes pulse {
@@ -144,7 +144,7 @@ body {
     background: var(--red-primary);
     border-radius: 50%;
     margin-right: 0.5rem;
-    animation: blink 1.5s ease-in-out infinite;
+    animation: blink 1s ease-in-out infinite;
     box-shadow: 0 0 10px var(--red-primary);
 }
 
@@ -579,7 +579,7 @@ body {
 .ticker-text {
     white-space: nowrap;
     padding-left: 100%;
-    animation: scroll 30s linear infinite;
+    animation: scroll 15s linear infinite;
     font-size: 0.95rem;
     font-weight: 500;
 }
